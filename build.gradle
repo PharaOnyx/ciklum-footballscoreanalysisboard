@@ -1,0 +1,27 @@
+plugins
+{ /* plugins */
+    id 'java'
+} /* plugins */
+
+repositories
+{ /* repositories */
+    mavenCentral()
+} /* repositories */
+
+dependencies
+{ /* dependencies */
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+} /* dependencies */
+
+jar
+{ /* jar */
+    manifest
+    { /* manifest */
+        attributes 'Main-Class': 'ciklum.footballscoreanalysisboard.FootballScoreAnalysisBoard'
+    } /* manifest */
+} /* jar */
+
+test
+{ /* test */
+    useJUnitPlatform()
+} /* test */
